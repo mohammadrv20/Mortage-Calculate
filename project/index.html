@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    
+    <div class="cards">
+     <div class="left-card">
+        <div class="left-header">
+        <h1>Mortage Calculator</h1>
+        <a href="#">Clear All</a>
+        </div>
+        <p class="Mortage-paragraph">Mortage Amount</p>
+        <div class="mortage-wrapper">
+        <input class="Mortage-Amount-input" type="number">
+        <div class="mortage-amount-before"><p class="dollar">$</p></div>
+        </div>
+        <div class="row-inputs">
+            <div class="left-input">
+                <p>Mortage Term</p>
+                <div class="left-input-wrapper">
+                <input type="text">
+                <div>years</div>
+                </div>
+            
+            </div>
+            <div class="right-input">
+                <p>Intrest Rate</p>
+                <div class="right-card-wrapper">
+                <input type="text">
+                <div>%</div>
+                </div>
+            </div>
+        </div>  
+        
+        <p class="mortage-type-paragragh">Mortage Type</p>
+
+        <label class="first-radio">
+        <input class="first radio" type="radio">
+        <span>Repeyment</span>
+        </label>
+
+        <label class="second-radio">
+            <input class="radio" type="radio">
+            <span>Intrest Only</span>
+        </label>
+        
+        <button>
+            Calculate Repayments
+            <img src="/assets/images/icon-calculator.svg" alt="calculate">
+        </button>
+
+     </div>
+     <div class="card-wrapper">
+     <div class="right-card">
+        <img src="/assets/images/illustration-empty.svg" alt="illustration-empty">
+        <h2>Resault shown here</h2>
+        <p>Complete the form and click “calculate repayments” to see what 
+        your monthly repayments would be.</p>
+     </div>
+     </div>
+     </div>
+    
+</body>
+</html>

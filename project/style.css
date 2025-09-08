@@ -17,6 +17,13 @@ body {
     height: 100vh;
 }
 
+@media (max-width: 768px) {
+    .cards {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
 .left-card {
     background-color: hsl(0, 0%, 100%);
     width: 40rem;

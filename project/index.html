@@ -19,14 +19,14 @@
         </div>
         <p class="Mortage-paragraph">Mortage Amount</p>
         <div class="mortage-wrapper">
-        <input class="Mortage-Amount-input" type="number">
+        <input type="text" class="Mortage-Amount-input">
         <div class="mortage-amount-before"><p class="dollar">$</p></div>
         </div>
         <div class="row-inputs">
             <div class="left-input">
                 <p>Mortage Term</p>
                 <div class="left-input-wrapper">
-                <input type="text">
+                <input class="mortageTerm" type="text">
                 <div>years</div>
                 </div>
             
@@ -34,7 +34,7 @@
             <div class="right-input">
                 <p>Intrest Rate</p>
                 <div class="right-card-wrapper">
-                <input type="text">
+                <input class="intrestRate" type="text">
                 <div>%</div>
                 </div>
             </div>
@@ -52,7 +52,7 @@
             <span>Intrest Only</span>
         </label>
         
-        <button>
+        <button onclick="resault()">
             Calculate Repayments
             <img src="/assets/images/icon-calculator.svg" alt="calculate">
         </button>
@@ -60,10 +60,22 @@
      </div>
      <div class="card-wrapper">
      <div class="right-card">
-        <img src="/assets/images/illustration-empty.svg" alt="illustration-empty">
-        <h2>Resault shown here</h2>
-        <p>Complete the form and click “calculate repayments” to see what 
+        <img class="right-card-img" src="/assets/images/illustration-empty.svg" alt="illustration-empty">
+        <h2 class="right-card-h2">Resault shown here</h2>
+        <p class="right-card-para">Complete the form and click “calculate repayments” to see what 
         your monthly repayments would be.</p>
+        <div class="right-card-resault">
+            <h2 class="right-card-resault-h2"></h2>
+            <p class="right-card-resault-para"></p>
+                  <div class="right-card-resault-card">
+                    <div class="thiny-line"></div>
+                    <p class="resault-card-first-para">Your monthly repayments</p>
+                    <h1 class="right-h"></h1>
+                    <hr>
+                    <p class="last-p">Total you'll repay over the term</p>
+                    <h3 class="last-h"></h3>
+                  </div>
+        </div>
      </div>
      </div>
      </div>
